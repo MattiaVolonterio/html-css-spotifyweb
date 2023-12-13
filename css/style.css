@@ -347,14 +347,40 @@ a {
   background-color: var(--icon-border-color);
 }
 
+/* recently played */
+
 .col {
   width: calc(100% / 6);
 }
 
+#recently-played h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .card {
-  /* debug */
-  background-color: white;
+  text-align: center;
   min-height: 200px;
+}
+
+.card-description span {
+  display: block;
+
+  color: var(--text-grey-color);
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding-bottom: 1rem;
+}
+
+.card-description h3 {
+  color: white;
+  font-size: 1rem;
+}
+
+.card-description h3,
+.card-description span {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* ## APP PLAYER - FOOTER */
@@ -385,6 +411,13 @@ a {
 
 /* MEDIA MEDIUM */
 @media screen and (max-width: 768px) {
+  :root {
+    /* GRID */
+
+    --grid-padding: 0.5rem;
+    --grid-margin: -0.5rem;
+  }
+
   /* APP TOP MAIN CONTENT */
   .category-list li {
     font-size: 0.8rem;
@@ -394,6 +427,11 @@ a {
 
   .col {
     width: calc(100% / 4);
+  }
+
+  .card-description span,
+  .card-description h3 {
+    font-size: 0.7rem;
   }
 }
 
@@ -461,5 +499,19 @@ a {
     padding-bottom: 0;
     border: 0;
     /* justify-content: center; */
+  }
+
+  .card-description span {
+    font-size: 0.75rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .card-description h3 {
+    font-size: 0.9rem;
+  }
+
+  .card-description h3,
+  .card-description span {
+    margin-bottom: 0.5rem;
   }
 }
