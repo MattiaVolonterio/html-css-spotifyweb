@@ -7,6 +7,10 @@
   --navbar-bg-color: #000000;
   --footer-bg-color: #282828;
 
+  --text-grey-color: #76787d;
+
+  --icon-border-color: #a2ef2c;
+
   /* DIMENSION */
 
   --footer-height: 90px;
@@ -43,6 +47,15 @@ img {
 
 h2 {
   color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* ## DEBUG */
@@ -107,6 +120,78 @@ h2 {
   width: var(--navbar-width);
 
   background-color: var(--navbar-bg-color);
+
+  padding-top: 1rem;
+
+  font-size: 0.8rem;
+
+  /* debug */
+  color: var(--text-grey-color);
+}
+
+/* navbar logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+
+.navbar-logo img {
+  width: 70%;
+}
+
+/* navbar link list */
+.link-list-home,
+.link-list-search,
+.link-list-library {
+  display: flex;
+  align-items: center;
+
+  padding-left: 1rem;
+
+  margin-bottom: 0.5rem;
+}
+
+.link-list-home {
+  border-left: 1px solid var(--icon-border-color);
+}
+
+.link-img {
+  width: 30px;
+  aspect-ratio: 1;
+
+  margin-right: 5px;
+}
+
+/* playlist */
+
+.playlist {
+  padding-left: 1rem;
+
+  margin-top: 1rem;
+}
+
+.playlist h2 {
+  font-size: 0.9rem;
+}
+
+.add-playlist {
+  display: flex;
+  align-items: center;
+
+  margin-top: 1rem;
+}
+
+.add-playlist i {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+.playlist-list li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .account {
