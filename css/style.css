@@ -398,6 +398,25 @@ a {
   margin-bottom: 2rem;
 }
 
+/* popular artist */
+
+#popular-artist h2 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#popular-artist > span {
+  display: block;
+
+  color: var(--text-grey-color);
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+#popular-artist .card-image img {
+  border-radius: 50%;
+}
+
 /* ## APP PLAYER - FOOTER */
 
 #app-player {
