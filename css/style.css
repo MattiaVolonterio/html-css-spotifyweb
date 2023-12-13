@@ -176,7 +176,7 @@ a {
 }
 
 .link-list-home {
-  border-left: 1px solid var(--icon-border-color);
+  box-shadow: inset 5px 0 0 0 var(--icon-border-color);
 }
 
 .link-list-search img,
@@ -296,6 +296,7 @@ a {
   width: calc(100% - var(--navbar-width));
   position: fixed;
   top: 0;
+  z-index: 1;
 
   display: flex;
   justify-content: flex-end;
@@ -314,6 +315,36 @@ a {
   height: 100%;
   padding-top: var(--header-compensation-padding);
   overflow: auto;
+}
+
+/* category list */
+.category-list {
+  text-align: center;
+}
+
+.category-list li {
+  display: inline-block;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-grey-color);
+
+  padding: 0 1rem 2rem 0;
+}
+
+.underline a {
+  position: relative;
+}
+
+.underline a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 35px;
+  height: 2px;
+  background-color: var(--icon-border-color);
 }
 
 .col {
@@ -355,6 +386,12 @@ a {
 /* MEDIA MEDIUM */
 @media screen and (max-width: 768px) {
   /* APP TOP MAIN CONTENT */
+  .category-list li {
+    font-size: 0.8rem;
+
+    padding: 0 0.6rem 1.5rem 0;
+  }
+
   .col {
     width: calc(100% / 4);
   }
@@ -403,7 +440,7 @@ a {
   }
 
   .link-list-home {
-    border-left: 0;
+    box-shadow: 0 0 0 0;
   }
 
   .playlist {
