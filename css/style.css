@@ -1,0 +1,84 @@
+/* ## CUSTOM PROP */
+
+:root {
+  /* COLOR */
+
+  --body-bg-color: #141922;
+  --navbar-bg-color: #000000;
+  --footer-bg-color: #282828;
+
+  /* DIMENSION */
+
+  --footer-height: 90px;
+  --navbar-width: 230px;
+  --header-height: 90px;
+
+  /* UTILS */
+
+  --header-compensation-padding: calc(var(--header-height) + 30px);
+}
+
+/* ## RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-bg-color);
+
+  /* debug */
+  color: white;
+}
+
+/* ## APP TOP */
+
+#app-top {
+  display: flex;
+
+  height: calc(100vh - var(--footer-height));
+}
+
+/** NAV BAR */
+
+#app-top-navbar {
+  height: calc(100vh - var(--footer-height));
+  width: var(--navbar-width);
+
+  background-color: var(--navbar-bg-color);
+}
+
+/** APP TOP MAIN */
+
+#app-top-main {
+  width: calc(100% - var(--navbar-width));
+}
+
+/* APP TOP MAIN HEADER */
+
+#app-top-main-header {
+  height: var(--header-height);
+  width: calc(100% - var(--navbar-width));
+  position: fixed;
+  top: 0;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* APP TOP MAIN CONTENT */
+
+#app-top-main-content {
+  height: 100%;
+  padding-top: var(--header-compensation-padding);
+  overflow: auto;
+}
+
+/* ## APP PLAYER - FOOTER */
+
+#app-player {
+  height: var(--footer-height);
+
+  background-color: var(--footer-bg-color);
+}
