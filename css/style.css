@@ -43,6 +43,7 @@ body {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 h2 {
@@ -139,8 +140,12 @@ a {
   padding-bottom: 2rem;
 }
 
-.navbar-logo img {
+.navbar-logo-big {
   width: 70%;
+}
+
+.navbar-logo-small {
+  display: none;
 }
 
 /* navbar link list */
@@ -170,6 +175,8 @@ a {
   aspect-ratio: 1;
 
   margin-right: 5px;
+
+  cursor: pointer;
 }
 
 /* playlist */
@@ -195,6 +202,8 @@ a {
 .add-playlist i {
   font-size: 3rem;
   margin-right: 1rem;
+
+  cursor: pointer;
 }
 
 .playlist-list li {
@@ -231,6 +240,8 @@ a {
   object-position: center;
 
   filter: brightness(50%);
+
+  cursor: pointer;
 }
 
 .account-link {
@@ -254,6 +265,8 @@ a {
   overflow: hidden;
 
   margin-right: 10px;
+
+  cursor: pointer;
 }
 
 /** APP TOP MAIN */
@@ -341,6 +354,57 @@ a {
 @media screen and (max-width: 480px) {
   :root {
     /* DIMENSION */
-    --navbar-width: 100px;
+    --navbar-width: 60px;
+  }
+
+  /** NAV BAR */
+
+  .navbar-logo {
+    padding-bottom: 1rem;
+    padding-right: 0.8rem;
+  }
+
+  .navbar-logo-big {
+    display: none;
+  }
+
+  .navbar-logo-small {
+    display: block;
+  }
+
+  .link-list-home,
+  .link-list-search,
+  .link-list-library {
+    padding-right: 0.5rem;
+  }
+
+  .link-list-home a,
+  .link-list-search a,
+  .link-list-library a {
+    display: none;
+  }
+
+  .link-list-home {
+    border-left: 0;
+  }
+
+  .playlist {
+    display: none;
+  }
+
+  .account {
+    padding-right: 0.5rem;
+  }
+
+  .download-link a,
+  .account-link a {
+    display: none;
+  }
+
+  .download-link {
+    padding-left: 3.5px;
+    padding-bottom: 0;
+    border: 0;
+    /* justify-content: center; */
   }
 }
