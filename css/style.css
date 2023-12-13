@@ -135,6 +135,7 @@ a {
   align-items: center;
 
   padding-left: 1rem;
+  padding-right: 1rem;
   padding-bottom: 2rem;
 }
 
@@ -150,12 +151,18 @@ a {
   align-items: center;
 
   padding-left: 1rem;
+  padding-right: 1rem;
 
   margin-bottom: 0.5rem;
 }
 
 .link-list-home {
   border-left: 1px solid var(--icon-border-color);
+}
+
+.link-list-search img,
+.link-list-library img {
+  filter: brightness(50%);
 }
 
 .link-img {
@@ -169,6 +176,7 @@ a {
 
 .playlist {
   padding-left: 1rem;
+  padding-right: 1rem;
 
   margin-top: 1rem;
 }
@@ -194,8 +202,58 @@ a {
   margin-bottom: 1rem;
 }
 
+/* account */
 .account {
   margin-top: auto;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.download-link {
+  display: flex;
+  align-items: center;
+
+  padding-bottom: 1rem;
+
+  border-bottom: 1px solid var(--text-grey-color);
+}
+
+.download-link-img {
+  width: 15px;
+  height: 15px;
+
+  margin-right: 5px;
+}
+
+.download-link-img img {
+  object-fit: cover;
+  object-position: center;
+
+  filter: brightness(50%);
+}
+
+.account-link {
+  display: flex;
+  align-items: center;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.account-link-img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--text-grey-color);
+
+  overflow: hidden;
+
+  margin-right: 10px;
 }
 
 /** APP TOP MAIN */
