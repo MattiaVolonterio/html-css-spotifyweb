@@ -103,6 +103,20 @@ a {
   padding: var(--grid-padding);
 }
 
+/* ## UTILS */
+.btn {
+  background-color: inherit;
+
+  color: white;
+
+  border: 1px solid white;
+  border-radius: 25px;
+
+  padding: 0.8rem 2.5rem;
+
+  cursor: pointer;
+}
+
 /* ## APP TOP */
 
 #app-top {
@@ -288,6 +302,10 @@ a {
   align-items: center;
 
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+#app-top-main-header .btn {
+  margin-right: 1rem;
 }
 
 /* APP TOP MAIN CONTENT */
