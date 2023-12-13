@@ -16,6 +16,11 @@
   /* UTILS */
 
   --header-compensation-padding: calc(var(--header-height) + 30px);
+
+  /* GRID */
+
+  --grid-padding: 1rem;
+  --grid-margin: -1rem;
 }
 
 /* ## RESET */
@@ -28,9 +33,41 @@
 
 body {
   background-color: var(--body-bg-color);
+}
 
-  /* debug */
-  color: white;
+img {
+  max-width: 100%;
+}
+
+/* ## DEBUG */
+
+.nav-debug {
+  background-color: white;
+  border: 1px dashed red;
+  min-height: 100px;
+}
+
+.header-debug {
+  background-color: white;
+  border: 1px dashed red;
+  height: 50px;
+  width: 150px;
+}
+
+/* ## GRID */
+
+.container {
+  padding: var(--grid-padding);
+}
+
+.row {
+  margin: var(--grid-margin);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  padding: var(--grid-padding);
 }
 
 /* ## APP TOP */
@@ -44,10 +81,17 @@ body {
 /** NAV BAR */
 
 #app-top-navbar {
+  display: flex;
+  flex-direction: column;
+
   height: calc(100vh - var(--footer-height));
   width: var(--navbar-width);
 
   background-color: var(--navbar-bg-color);
+}
+
+.account {
+  margin-top: auto;
 }
 
 /** APP TOP MAIN */
@@ -64,6 +108,9 @@ body {
   position: fixed;
   top: 0;
 
+  display: flex;
+  justify-content: flex-end;
+
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -75,10 +122,48 @@ body {
   overflow: auto;
 }
 
+.col {
+  width: calc(100% / 6);
+}
+
+.card {
+  /* debug */
+  background-color: white;
+  min-height: 200px;
+}
+
 /* ## APP PLAYER - FOOTER */
 
 #app-player {
   height: var(--footer-height);
 
   background-color: var(--footer-bg-color);
+}
+
+/*******************************************
+                MEDIA QUERY 
+*******************************************/
+
+/* MEDIA MEDIUM */
+@media screen and (max-width: 768px) {
+  /* APP TOP MAIN CONTENT */
+  .col {
+    width: calc(100% / 4);
+  }
+}
+
+/* MEDIA SMALL */
+@media screen and (max-width: 576px) {
+  /* APP TOP MAIN CONTENT */
+  .col {
+    width: calc(100% / 2);
+  }
+}
+
+/* MEDIA EXTRA-SMALL */
+@media screen and (max-width: 480px) {
+  :root {
+    /* DIMENSION */
+    --navbar-width: 100px;
+  }
 }
