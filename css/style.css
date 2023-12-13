@@ -15,7 +15,7 @@
 
   /* UTILS */
 
-  --header-compensation-padding: calc(var(--header-height) + 30px);
+  --header-compensation-padding: calc(var(--header-height) + 15px);
 
   /* GRID */
 
@@ -41,6 +41,10 @@ img {
   max-width: 100%;
 }
 
+h2 {
+  color: white;
+}
+
 /* ## DEBUG */
 
 .nav-debug {
@@ -54,6 +58,13 @@ img {
   border: 1px dashed red;
   height: 50px;
   width: 150px;
+}
+
+.content-debug {
+  background-color: white;
+  border: 1px dashed red;
+  min-height: 100px;
+  margin-bottom: 1rem;
 }
 
 .footer-debug {
