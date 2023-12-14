@@ -617,7 +617,7 @@ a {
 *******************************************/
 
 /* MEDIA MEDIUM */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
   :root {
     /* GRID */
 
@@ -665,7 +665,7 @@ a {
 }
 
 /* MEDIA SMALL */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 760px) {
   /* APP TOP MAIN CONTENT */
   .col {
     width: calc(100% / 2);
@@ -689,7 +689,7 @@ a {
 }
 
 /* MEDIA EXTRA-SMALL */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   :root {
     /* DIMENSION */
     --navbar-width: 60px;
