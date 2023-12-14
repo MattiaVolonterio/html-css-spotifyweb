@@ -160,6 +160,8 @@ a {
 #app-top {
   display: flex;
 
+  overflow: hidden;
+
   height: calc(100vh - var(--footer-height));
 }
 
@@ -168,6 +170,8 @@ a {
 #app-top-navbar {
   display: flex;
   flex-direction: column;
+
+  overflow: auto;
 
   height: calc(100vh - var(--footer-height));
   width: var(--navbar-width);
@@ -768,7 +772,6 @@ a {
     padding-left: 3.5px;
     padding-bottom: 0;
     border: 0;
-    /* justify-content: center; */
   }
 
   .card-description span {
