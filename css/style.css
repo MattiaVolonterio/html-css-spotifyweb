@@ -60,35 +60,6 @@ a {
   color: inherit;
 }
 
-/* ## DEBUG */
-
-.nav-debug {
-  background-color: white;
-  border: 1px dashed red;
-  min-height: 100px;
-}
-
-.header-debug {
-  background-color: white;
-  border: 1px dashed red;
-  height: 50px;
-  width: 150px;
-}
-
-.content-debug {
-  background-color: white;
-  border: 1px dashed red;
-  min-height: 100px;
-  margin-bottom: 1rem;
-}
-
-.footer-debug {
-  background-color: white;
-  border: 1px dashed red;
-  height: 50px;
-  width: 250px;
-}
-
 /* ## GRID */
 
 .container {
