@@ -94,7 +94,7 @@ a {
 
 .link-list li:hover,
 .playlist .add-playlist:hover,
-.playlist .playlist-list li:hover,
+.playlist-list li:hover,
 .download-link:hover,
 .category-list li:hover,
 .app-player-left-icon i:hover,
@@ -233,6 +233,15 @@ a {
   margin-right: 1rem;
 
   cursor: pointer;
+}
+
+.playlist-list {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  overflow: auto;
+
+  min-height: 80px;
 }
 
 .playlist-list li {
@@ -729,6 +738,10 @@ a {
   }
 
   .playlist {
+    display: none;
+  }
+
+  .playlist-list {
     display: none;
   }
 
