@@ -311,14 +311,16 @@ a {
 
 #app-top-main {
   width: calc(100% - var(--navbar-width));
+
+  overflow: auto;
 }
 
 /* APP TOP MAIN HEADER */
 
 #app-top-main-header {
   height: var(--header-height);
-  width: calc(100% - var(--navbar-width));
-  position: fixed;
+  /* width: calc(100% - var(--navbar-width)); */
+  position: sticky;
   top: 0;
   z-index: 1;
 
@@ -337,8 +339,9 @@ a {
 
 #app-top-main-content {
   height: 100%;
-  padding-top: var(--header-compensation-padding);
-  overflow: auto;
+  /* padding-top: var(--header-compensation-padding); */
+  padding-top: 15px;
+  /* overflow: auto; */
 }
 
 /* category list */
