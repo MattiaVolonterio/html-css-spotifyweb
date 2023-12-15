@@ -97,7 +97,8 @@ a {
 .playlist .playlist-list li:hover,
 .download-link:hover,
 .category-list li:hover,
-.app-player-left-icon i:hover {
+.app-player-left-icon i:hover,
+.app-player-left-title span:hover {
   color: white;
 }
 
@@ -488,7 +489,8 @@ a {
 .app-player-middle {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 0.5rem;
+  /* justify-content: space-between; */
 
   height: var(--footer-content-height);
   width: 40%;
@@ -569,19 +571,18 @@ a {
 }
 
 .progression-bar {
-  position: relative;
-
   width: 80%;
-  height: 5px;
+  height: 3px;
   background-color: var(--text-grey-color);
+
+  border-radius: 3px;
 }
 
 .progression-status {
-  position: absolute;
-  left: 0;
+  position: relative;
 
   width: 30%;
-  height: 5px;
+  height: 100%;
   background-color: white;
 }
 
@@ -589,10 +590,11 @@ a {
   content: "";
   display: none;
   position: absolute;
-  right: 0;
-  transform: translate(25%, -40%);
-  height: 20px;
-  width: 20px;
+  left: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 15px;
+  width: 15px;
   background-color: white;
   border-radius: 50%;
 }
